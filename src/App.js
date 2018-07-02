@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import {createStore} from 'redux';
-import counter from './reducers';
+import store from './store';
 
-const store = createStore(counter);
 console.log(store.getState())
 
 store.dispatch({type: 'INCREMENT'});
 console.log(store.getState())
 
 class App extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render() {
     return (
-      <div>hi</div>
+      <div>{this.props.value}</div>
     );
   }
 }
