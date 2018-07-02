@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import {createStore} from 'redux';
+import counter from './reducers';
 
 
 class App extends Component {
