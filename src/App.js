@@ -13,7 +13,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>{this.props.value}</div>
+      <div>
+        <h1>{this.props.value}</h1>
+        <button onClick = {this.props.onIncrement}>+</button>
+        <button onClick = {this.props.onDecrement}>-</button>
+      </div>
     );
   }
 }
