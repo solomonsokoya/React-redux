@@ -1,3 +1,15 @@
+const INCREMENT = 'INCREMENT';
+const DECREMENT = 'DECREMENT';
+
+
+export const Increment = res => ({
+  type: INCREMENT
+})
+
+export const Decrement = res => ({
+  type: DECREMENT
+})
+
 const counter = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
